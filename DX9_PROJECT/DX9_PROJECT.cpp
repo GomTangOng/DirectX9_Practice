@@ -39,6 +39,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
     }
 
+	DXENGINE->Setup();
+
 	if (!DXENGINE->InitDX(hInst, g_hwnd, 800, 600, true, D3DDEVTYPE_HAL))
 	{
 		return FALSE;
